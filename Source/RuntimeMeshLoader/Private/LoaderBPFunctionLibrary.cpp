@@ -15,7 +15,7 @@ void FindMeshInfo(const aiScene* scene, aiNode* node, FReturnedData& result)
 		UE_LOG(LogTemp, Warning, TEXT("FindMeshInfo. %s\n"), *Fs);
 		int meshidx = *node->mMeshes;
 		aiMesh *mesh = scene->mMeshes[meshidx];
-		FMeshInfo &mi = result.meshInfo[meshidx];
+		FMeshInformation &mi = result.meshInfo[meshidx];
 
 		//transform.
 		aiMatrix4x4 tempTrans = node->mTransformation;

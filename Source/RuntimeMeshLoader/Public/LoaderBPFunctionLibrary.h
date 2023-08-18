@@ -14,7 +14,7 @@ enum class EPathType : uint8
 
 
 USTRUCT(BlueprintType)
-struct FMeshInfo
+struct FMeshInformation
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -53,7 +53,7 @@ struct FReturnedData
 
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "ReturnedData")
-		TArray<FMeshInfo> meshInfo;
+		TArray<FMeshInformation> meshInfo;
 
 
 };
